@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Cá Nhân - Trần Đức Anh</title>
+    <!-- Liên kết file CSS tách riêng -->
+    <link rel="stylesheet" href="B25DTCN063_TranDucAnh.css" />
+    <!-- Thư viện icon FontAwesome để hiển thị icon đẹp mắt -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER: Logo, Tiêu đề, Đồng hồ số -->
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo-box">
+          <img
+            src="logo.png"
+            alt="Logo"
+            class="logo-img"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/50x50/1e3a8a/ffffff?text=PTIT'
+            "
+          />
+          <span class="brand-name">PTIT PORTFOLIO</span>
+        </div>
+        <div class="digital-clock" id="clock">00:00:00</div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container main-content fade-in">
+      <!-- PHẦN 1: THÔNG TIN CÁ NHÂN & ẢNH ĐẠI DIỆN -->
+      <section class="card profile-section">
+        <div class="avatar-container">
+          <img
+            src="avt.png"
+            alt="Ảnh đại diện"
+            id="avatarImg"
+            class="avatar-img"
+            title="Click để phóng to ảnh"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/220x220/2563eb/ffffff?text=Avatar'
+            "
+          />
+          <p class="avatar-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Nhấn vào ảnh để
+            phóng to
+          </p>
+        </div>
+
+        <div class="info-container">
+          <h1 class="student-name">TRẦN ĐỨC ANH</h1>
+          <p class="student-role">
+            Sinh viên Công nghệ Thông tin | Gia sư Toán
+          </p>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <strong><i class="fa-solid fa-id-card"></i> Mã sinh viên:</strong>
+              B25DTCN063
+            </div>
+            <div class="info-item">
+              <strong><i class="fa-solid fa-users"></i> Lớp:</strong>
+              D25TXCN07-B
+            </div>
+            <div class="info-item">
+              <strong><i class="fa-solid fa-school"></i> Trường:</strong> Học
+              viện Công nghệ Bưu chính Viễn thông
+            </div>
+            <div class="info-item">
+              <strong
+                ><i class="fa-solid fa-cake-candles"></i> Ngày sinh:</strong
+              >
+              01/10/2007
+            </div>
+            <div class="info-item">
+              <strong><i class="fa-solid fa-venus-mars"></i> Giới tính:</strong>
+              Nam
+            </div>
+            <div class="info-item">
+              <strong><i class="fa-solid fa-phone"></i> Số điện thoại:</strong>
+              09xx.xxx.xxx
+            </div>
+            <div class="info-item">
+              <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
+              ducanh.ptit@example.com
+            </div>
+            <div class="info-item">
+              <strong><i class="fa-solid fa-location-dot"></i> Địa chỉ:</strong>
+              Hà Nội, Việt Nam
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHẦN 2: CÔNG VIỆC HIỆN TẠI -->
+      <section class="card job-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-briefcase"></i> Công Việc Hiện Tại
+        </h2>
+        <div class="job-box">
+          <h3>Gia sư & Giảng dạy Toán học</h3>
+          <p class="company">
+            <i class="fa-solid fa-building"></i> Cơ quan công tác: Lớp học tự do
+            / Trung tâm luyện thi tại Hà Nội
+          </p>
+          <p class="job-desc">
+            <strong>Mô tả công việc:</strong> Giảng dạy môn Toán bậc THPT, ôn
+            luyện thi tốt nghiệp THPT Quốc gia và bồi dưỡng học sinh giỏi. Xây
+            dựng hệ thống tài liệu, đề thi trắc nghiệm chuẩn cấu trúc và hướng
+            dẫn tư duy giải nhanh cho các lớp nhóm nhỏ từ 5–10 học sinh.
+          </p>
+        </div>
+      </section>
+
+      <!-- PHẦN 3: SỞ THÍCH CÁ NHÂN (Có nút Xem thêm / Thu gọn) -->
+      <section class="card hobby-section">
+        <div class="section-header-flex">
+          <h2 class="section-title">
+            <i class="fa-solid fa-heart"></i> Sở Thích Cá Nhân
+          </h2>
+          <button id="toggleHobbyBtn" class="btn btn-primary">Thu gọn</button>
+        </div>
+
+        <div id="hobbyList" class="hobby-grid">
+          <div class="hobby-item">
+            <i class="fa-solid fa-futbol hobby-icon"></i>
+            <h3>Bóng đá & Thể thao</h3>
+            <p>
+              Đam mê đá bóng sân cỏ nhân tạo, theo dõi các giải đấu quốc tế và
+              chơi game chiến thuật bóng đá FC Online.
+            </p>
+          </div>
+          <div class="hobby-item">
+            <i class="fa-solid fa-code hobby-icon"></i>
+            <h3>Lập trình & Công nghệ</h3>
+            <p>
+              Tìm hiểu phát triển Web (HTML/CSS/JS, ReactJS), cơ sở dữ liệu
+              MySQL và lập trình hướng đối tượng Java.
+            </p>
+          </div>
+          <div class="hobby-item">
+            <i class="fa-solid fa-mountain-sun hobby-icon"></i>
+            <h3>Du lịch & Leo núi</h3>
+            <p>
+              Thích khám phá thiên nhiên, trekking leo núi rèn luyện sức khỏe và
+              trải nghiệm văn hóa các vùng miền.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHẦN 4: LIÊN KẾT MẠNG XÃ HỘI -->
+      <section class="card social-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-share-nodes"></i> Kết Nối Với Tôi
+        </h2>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" class="social-btn fb"
+            ><i class="fa-brands fa-facebook"></i> Facebook</a
+          >
+          <a href="https://zalo.me" target="_blank" class="social-btn zalo"
+            ><i class="fa-solid fa-comment-dots"></i> Zalo</a
+          >
+          <a href="https://github.com" target="_blank" class="social-btn github"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER: Bản quyền & Năm tự động cập nhật -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="currentYear">2026</span> Bản quyền thuộc về
+          <strong>Trần Đức Anh</strong> - Học viện Công nghệ Bưu chính Viễn
+          thông.
+        </p>
+      </div>
+    </footer>
+
+    <!-- MODAL POPUP PHÓNG TO ẢNH ĐẠI DIỆN -->
+    <div id="imageModal" class="modal">
+      <span class="close-modal" id="closeModalBtn">&times;</span>
+      <img class="modal-content" id="modalImg" alt="Ảnh phóng to" />
+      <div id="modalCaption">Trần Đức Anh - Ảnh đại diện</div>
+    </div>
+
+    <!-- Liên kết file JavaScript tách riêng -->
+    <script src="B25DTCn063_TranDucAnh.js"></script>
+  </body>
+</html>
